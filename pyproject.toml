@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "music-league-analysis"
+version = "0.1.0"
+description = "Deterministic Music League metrics from the tracker workbook"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26",
+    "openpyxl>=3.1",
+    "pandas>=2.2",
+]
+
+[project.scripts]
+ml-analysis = "ml_analysis.cli:main"
+
+[dependency-groups]
+dashboard = [
+    "altair>=6.3.0",
+    "streamlit>=1.66.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["ml_analysis"]
+
+[tool.uv]
+package = true

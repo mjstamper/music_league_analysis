@@ -1,0 +1,25 @@
+{
+  "min_league_rounds": 8,
+  "performance_excluded_statuses": [
+    "Forfeited",
+    "Zero-vote",
+    "Mismatch",
+    "Unscored"
+  ],
+  "default_cap": 1.0,
+  "cap_overrides": {},
+  "twin_weights": [
+    0.7,
+    0.3
+  ],
+  "twin_min_shared_rounds": 4,
+  "twin_near_tie_margin": 0.03,
+  "gem_weights": [
+    0.7,
+    0.3
+  ],
+  "min_submissions_award": 4,
+  "min_shared_rounds_pair": 3,
+  "min_ballots": 3,
+  "recap_periods": {}
+}
